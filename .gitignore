@@ -8,6 +8,8 @@ bin-release/
 .settings/
 .ipynb_checkpoints/
 .gitignore/
+.cifar10
+.data
 
 # Executables
 *.swf
