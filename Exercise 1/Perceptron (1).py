@@ -134,7 +134,7 @@ def visualize(X, y, title="Unknown Performance", xName="X", yName="Y", resolutio
     x1min, x1max = X_set[:, 1].min(), X_set[:, 1].max()
     x0step = (x0max - x0min) / resolution
     x1step = (x1max - x1min) / resolution
-    # create meshgrid
+    # generate meshgrid
     X1, X2 = np.meshgrid(np.arange(start=x0min - 1, stop=x0max + 1, step=x0step),
                          np.arange(start=x1min - 1, stop=x1max + 1, step=x1step))
     plt.contourf(X1, X2, predict(np.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
